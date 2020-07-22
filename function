@@ -1,0 +1,29 @@
+class Factorl
+{
+	public static void main(String args[])
+	
+	{
+	
+           long n,fact=0;
+ 
+	   n=Long.parseLong(args[0]);		   
+                  
+           fact=factCal(n);
+ 
+           System.out.println("fact="+fact);
+ 
+	}
+	
+	static long factCal(long x)
+	{
+	    long fact=1;
+	    for(int i=1;i<=x;i++)
+	    {
+	
+	    	fact=fact*i;
+ 
+ 	    }
+	    return fact;
+	}
+ 
+}
